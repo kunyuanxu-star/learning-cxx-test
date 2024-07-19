@@ -1,6 +1,6 @@
 add_rules("mode.debug", "mode.release")
 set_encodings("utf-8")
-set_warnings("all", "error")
+set_warnings("all")
 set_kind("binary")
 set_languages("cxx17")
 
@@ -73,4 +73,25 @@ target("exercise21")
 target("exercise22")
     add_files("22_std_array/main.cpp")
 
--- TODO: vector; vector<bool>; deque; map; forward_list; string; transform; accumulate; fs; thread; mutex;
+target("exercise23")
+    add_files("23_std_vector/main.cpp")
+
+target("exercise24")
+    add_files("24_std_vector_bool/main.cpp")
+
+target("exercise25")
+    add_files("25_strides/main.cpp")
+
+target("exercise26")
+    add_files("26_std_string/main.cpp")
+
+target("exercise27")
+    add_files("27_std_map/main.cpp")
+
+target("exercise28")
+    add_files("28_std_transform/main.cpp")
+
+target("exercise29")
+    add_files("29_std_accumulate/main.cpp")
+
+-- TODO: deque; forward_list; fs; thread; mutex;
